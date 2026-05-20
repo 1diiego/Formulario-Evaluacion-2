@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="    ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+
+
+
+
+
+<body>
+<h1>Formulario de Registro</h1>
+<form id="miFormulario">
+
+    <div>
+        <label for="nombreusuario">Nombre de usuario:</label>
+        <input type="text" id="nombreusuario" name="nombreusuario">
+        <span id="nombreusuario-msg"></span>
+    </div>
+
+    <div>
+        <label for="contraseña">contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña">
+        <span id="contraseña-msg"></span>
+    </div>
+
+    <div>
+        <label for="confirmar">Confirmar contraseña:</label>
+        <input type="password" id="confirmar" name="contraseña">
+        <span id="confirmar-msg"></span>
+    </div>
+
+    <div>
+        <label for="direccion">Direccion</label>
+        <input type="text" id="direccion" name="direccion">
+        <span id="direccion-msg"></span>
+    </div>
+
+    <div>
+         <label for="comuna">Comuna</label>
+        <select name="comuna" id="comuna">
+                <option value="">Seleccione su comuna</option>
+                <option value="valvivia">Valdivia</option>
+                <option value="corral">Corral</option>
+                <option value="lanco">Lanco</option>
+                <option value="los_lagos">Los Lagos</option>
+                <option value="mafil">Mafil</option>
+                <option value="paillaco">Paillaco</option>
+                <option value="panquipulli">Panguipulli</option>
+        </select>
+        <span id="comuna-msg"></span>
+    </div>
+
+    <div>
+        <label for="numero">Numero telefonico</label>
+        <input type="number" id="telefono" name="telefono">
+        <span id="telefono-msg"></span>
+    </div>
+
+    <div>
+        <label for="pagina">Sitio web personal</label>
+        <input type="text" id="pagina" name="pagina">
+        <span id="pagina-msg"></span> 
+    </div>
+
+    <div>
+    <label for="aficion" class="form-label">Aficiones</label>
+    <div class="input-group">
+        <input type="text" class="form-control" id="aficion">
+        <button onclick="agregar()" class="btn btn-secondary" type="button">Agregar</button>
+        <button type="button" onclick="borrarAficiones()">Borrar aficiones</button>
+    </div>
+    </div>
+
+<div>
+    <label class="form-label">Aficiones agregadas</label>
+    <ul id="aficion-list" class="list-group"></ul>
+    <div id="aficion-msg" class="form-text" style="color: red;"></div>
+</div>
+
+    <button type="submit">Enviar</button>
+
+</form>
+</body>
+
+
+
+
+</html>
