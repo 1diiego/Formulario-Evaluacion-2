@@ -9,3 +9,4 @@ correcciones
 layout espacio
 teléfono validar prefijo
 validar dominio
+borrar aficion unica
